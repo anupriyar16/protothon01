@@ -1,0 +1,18 @@
+import math
+def square(list1):
+    global y
+    ret=[]
+    for i in list1:
+        ret.append(i**2)
+        y=sum(ret)
+    print(y)
+
+   
+number=input("enter the numbers:")
+mylist=number.split(',')
+list1=list(map(float,mylist))
+x=len(list1)
+square(list1)
+if y>0:
+    z=math.sqrt(y)
+print("RMS IS:",z)
