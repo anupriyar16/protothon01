@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+int main()
+{
+    int choice;
+    float a,b,sum,sub,prod,quo;
+    printf("enter two numbers:");
+    scanf("%f%f",&a,&b);
+    printf("enter your choice:\n 1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n5.Exit");
+    scanf("%d",&choice);
+    switch(choice)
+    {
+        case 1: sum=a+b;
+                printf("RESULT:%0.6f",sum);
+                printf("\nenter your choice:");
+                scanf("%d",&choice);
+                switch(choice)
+                break;
+        case 2: sub=a-b;
+                printf("RESULT:%0.6f",sub);
+                 printf("\nenter your choice:");
+                scanf("%d",&choice);
+                switch(choice)
+                break;
+        case 3: prod=a*b;
+                printf("RESULT:%0.6f",prod);
+                 printf("\nenter your choice:");
+                scanf("%d",&choice);
+                switch(choice)
+                break;
+        case 4: if(b==0)
+                {
+                printf("Invalid Input");
+                }
+                else
+                {
+                quo=a/b;
+                printf("RESULT:%0.6f",quo);
+                }
+                 printf("\nenter your choice:");
+                scanf("%d",&choice);
+                switch(choice)
+                break;
+        case 5: break;
+    }
+    
+}
